@@ -1,0 +1,30 @@
+{
+  "name": "executive-travel-intelligence-cskill",
+  "version": "1.0.0",
+  "description": "Executive travel intelligence with 6-dimension analysis for business travelers",
+  "author": "Agent-Skill-Creator",
+  "owner": {
+    "name": "FrancyJGLisboa",
+    "email": "contact@example.com",
+    "url": "https://github.com/FrancyJGLisboa"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/FrancyJGLisboa/agent-skill-creator",
+  "keywords": [
+    "travel",
+    "business",
+    "executive",
+    "weather",
+    "timezone",
+    "forex",
+    "air-quality"
+  ],
+  "plugins": [
+    {
+      "name": "executive-travel-intelligence",
+      "description": "Executive travel intelligence provides comprehensive 6-dimension travel analysis including weather forecast, air quality, currency exchange, timezone conversion, holiday calendar, and smart recommendations. Activates when user mentions business trip, travel to city, going to destination, flight to place, or asks about travel conditions. Supports queries like 'I am going to Tokyo next week', 'business trip to London', 'travel report for New York'.",
+      "source": "./",
+      "skills": ["./"]
+    }
+  ]
+}

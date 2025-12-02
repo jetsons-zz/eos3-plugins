@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git pull:*)",
+      "WebFetch(domain:open-meteo.com)",
+      "WebSearch",
+      "Bash(python3:*)",
+      "Bash(find:*)",
+      "Bash(cat:*)",
+      "Bash(pip3 install:*)",
+      "Bash(for f in \".claude-plugin/marketplace.json\" \"SKILL.md\" \"README.md\" \"LICENSE\" \"CHANGELOG.md\" \"scripts/__init__.py\")",
+      "Bash(do [ -f \"$f\" ])",
+      "Bash(echo:*)",
+      "Bash(done)",
+      "WebFetch(domain:www.alphavantage.co)",
+      "WebFetch(domain:aqicn.org)",
+      "Bash(for skill in /Users/viveka/KarmaApp/skills/agent-skill-creator/*-cskill)",
+      "Bash(then echo \"✅ marketplace.json 存在\" cat \"$skill/.claude-plugin/marketplace.json\")",
+      "Bash(xargs:*)",
+      "Bash(git remote set-url:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

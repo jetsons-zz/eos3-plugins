@@ -1,3 +1,11 @@
+---
+name: article-to-prototype-cskill
+description: Autonomously extracts technical content from articles (PDF, web, markdown, notebooks) and generates functional prototypes in the appropriate programming language. Activates when user wants to implement code from papers, tutorials, or documentation.
+version: 1.0.0
+author: Agent-Skill-Creator
+license: MIT
+---
+
 # Article-to-Prototype Skill
 
 **Version:** 1.0.0

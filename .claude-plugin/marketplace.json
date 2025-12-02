@@ -1,124 +1,150 @@
 {
-  "name": "agent-skill-creator",
+  "name": "eos3-plugins",
   "owner": {
-    "name": "Agent Skill Creator",
-    "email": "agrolisboa@gmail.com"
+    "name": "jetsons-zz",
+    "email": "support@jetsons.io",
+    "url": "https://github.com/jetsons-zz"
   },
   "metadata": {
-    "description": " Agent Skill Creator - Meta-skill for autonomous agent generation with multi-agent support, templates, and interactive configuration. Supports single agents, multi-agent suites, transcript processing, template-based creation, and batch agent creation.",
-    "version": "3.0.0",
+    "description": "AI-powered skill marketplace featuring quantitative trading, executive productivity, and intelligent automation tools for Claude Code",
+    "version": "4.0.0",
     "created": "2025-10-18",
-    "updated": "2025-10-23",
+    "updated": "2025-12-02",
     "language": "en-US",
-    "features": [
-      "multi-agent-support",
-      "template-system",
-      "transcript-processing",
-      "interactive-configuration",
-      "batch-creation",
-      "enhanced-validation"
-    ]
+    "repository": "https://github.com/jetsons-zz/eos3-plugins"
   },
   "plugins": [
     {
-      "name": "agent-skill-creator-plugin",
-      "description": "This enhanced meta skill should be used when the user asks to create an CLAUDE CODE agent SKILL(S), automate a repetitive workflow, create a custom skill, or needs advanced agent creation capabilities. Activates with phrases like every day, daily I have to, I need to repeat, create agent for, automate workflow, create skill for, need to automate, turn process into agent. Supports single agents, multi-agent suites, transcript processing, template-based creation, and interactive configuration. Claude will use the enhanced protocol to research APIs, define analyses, structure everything, implement functional code, and create complete skills autonomously with optional user guidance.",
-      "source": "./",
+      "name": "ai-quant-trader",
+      "description": "AI-powered quantitative trading system with technical analysis (RSI, MACD, Bollinger Bands), sentiment analysis, multi-factor models, risk management (VaR, position sizing), and strategy backtesting. Activates for stock analysis, trading signals, portfolio risk, backtesting queries.",
+      "source": "./ai-quant-trader-cskill",
+      "version": "1.0.0",
+      "author": "Agent-Skill-Creator",
+      "license": "MIT",
+      "keywords": ["trading", "stocks", "quantitative", "technical-analysis", "backtesting", "risk-management"],
+      "category": "finance",
       "strict": false,
-      "skills": ["./"]
+      "skills": ["./ai-quant-trader-cskill"]
+    },
+    {
+      "name": "air-quality-advisor",
+      "description": "Real-time air quality monitoring and health advisory for global travelers and executives. Provides AQI data, health recommendations, and activity advice for cities worldwide. Activates for air quality, AQI, pollution, outdoor exercise safety queries.",
+      "source": "./air-quality-advisor-cskill",
+      "version": "1.0.0",
+      "author": "Agent-Skill-Creator",
+      "license": "MIT",
+      "keywords": ["air-quality", "AQI", "health", "travel", "pollution"],
+      "category": "health",
+      "strict": false,
+      "skills": ["./air-quality-advisor-cskill"]
+    },
+    {
+      "name": "article-to-prototype",
+      "description": "Extracts technical content from articles (PDF, web, markdown, notebooks) and generates functional prototypes in appropriate programming languages. Activates for implementing code from papers, tutorials, or documentation.",
+      "source": "./article-to-prototype-cskill",
+      "version": "1.0.0",
+      "author": "Agent-Skill-Creator",
+      "license": "MIT",
+      "keywords": ["article", "paper", "pdf", "prototype", "code-generation"],
+      "category": "development",
+      "strict": false,
+      "skills": ["./article-to-prototype-cskill"]
+    },
+    {
+      "name": "daily-wealth-brief",
+      "description": "Executive-grade daily financial briefing combining market overview, portfolio performance, and personalized insights for high-net-worth individuals. Activates for morning briefing, wealth summary, market update queries.",
+      "source": "./daily-wealth-brief-cskill",
+      "version": "1.0.0",
+      "author": "Agent-Skill-Creator",
+      "license": "MIT",
+      "keywords": ["wealth", "briefing", "executive", "portfolio", "market"],
+      "category": "finance",
+      "strict": false,
+      "skills": ["./daily-wealth-brief-cskill"]
+    },
+    {
+      "name": "deal-intelligence",
+      "description": "M&A and deal intelligence platform for executives. Analyzes potential acquisitions, tracks deal flow, and provides competitive intelligence. Activates for M&A analysis, deal evaluation, acquisition target queries.",
+      "source": "./deal-intelligence-cskill",
+      "version": "1.0.0",
+      "author": "Agent-Skill-Creator",
+      "license": "MIT",
+      "keywords": ["M&A", "deals", "acquisition", "intelligence", "executive"],
+      "category": "finance",
+      "strict": false,
+      "skills": ["./deal-intelligence-cskill"]
+    },
+    {
+      "name": "decision-matrix",
+      "description": "Structured decision-making framework for executives. Creates weighted decision matrices, evaluates options, and provides recommendation reports. Activates for complex decisions, option comparison, decision analysis queries.",
+      "source": "./decision-matrix-cskill",
+      "version": "1.0.0",
+      "author": "Agent-Skill-Creator",
+      "license": "MIT",
+      "keywords": ["decision", "matrix", "analysis", "executive", "strategy"],
+      "category": "productivity",
+      "strict": false,
+      "skills": ["./decision-matrix-cskill"]
+    },
+    {
+      "name": "executive-calendar",
+      "description": "Intelligent calendar management for busy executives. Optimizes scheduling, manages time zones, and provides meeting preparation briefs. Activates for calendar optimization, meeting scheduling, time management queries.",
+      "source": "./executive-calendar-cskill",
+      "version": "1.0.0",
+      "author": "Agent-Skill-Creator",
+      "license": "MIT",
+      "keywords": ["calendar", "scheduling", "executive", "meetings", "time-management"],
+      "category": "productivity",
+      "strict": false,
+      "skills": ["./executive-calendar-cskill"]
+    },
+    {
+      "name": "executive-travel-intelligence",
+      "description": "Comprehensive travel intelligence for global executives. Combines flight tracking, hotel recommendations, local insights, and security advisories. Activates for travel planning, flight status, destination intelligence queries.",
+      "source": "./executive-travel-intelligence-cskill",
+      "version": "1.0.0",
+      "author": "Agent-Skill-Creator",
+      "license": "MIT",
+      "keywords": ["travel", "executive", "flights", "hotels", "security"],
+      "category": "travel",
+      "strict": false,
+      "skills": ["./executive-travel-intelligence-cskill"]
+    },
+    {
+      "name": "global-market-pulse",
+      "description": "Real-time global market monitoring dashboard. Tracks stocks, crypto, forex, and commodities with alerts and analysis. Activates for market overview, price checks, global market status queries.",
+      "source": "./global-market-pulse-cskill",
+      "version": "1.0.0",
+      "author": "Agent-Skill-Creator",
+      "license": "MIT",
+      "keywords": ["market", "stocks", "crypto", "forex", "commodities"],
+      "category": "finance",
+      "strict": false,
+      "skills": ["./global-market-pulse-cskill"]
+    },
+    {
+      "name": "portfolio-pulse",
+      "description": "Investment portfolio dashboard tracking stocks, crypto, commodities, and forex. Provides risk analysis, diversification scoring, and rebalancing suggestions. Activates for portfolio analysis, holdings check, asset allocation queries.",
+      "source": "./portfolio-pulse-cskill",
+      "version": "1.0.0",
+      "author": "Agent-Skill-Creator",
+      "license": "MIT",
+      "keywords": ["portfolio", "investment", "stocks", "crypto", "risk"],
+      "category": "finance",
+      "strict": false,
+      "skills": ["./portfolio-pulse-cskill"]
+    },
+    {
+      "name": "weather-farming-advisor",
+      "description": "Agricultural weather intelligence for smart farming. Provides 7-day forecasts, soil analysis, crop suitability scoring, and farming operation recommendations. Activates for farming weather, crop advice, agricultural forecast queries.",
+      "source": "./weather-farming-advisor-cskill",
+      "version": "1.0.0",
+      "author": "Agent-Skill-Creator",
+      "license": "MIT",
+      "keywords": ["agriculture", "weather", "farming", "crop", "soil"],
+      "category": "agriculture",
+      "strict": false,
+      "skills": ["./weather-farming-advisor-cskill"]
     }
-  ],
-  "compatibility": {
-    "minimum_claude_version": "1.0.0",
-    "backward_compatible": true,
-    "deprecated_versions": []
-  },
-  "templates": {
-    "enabled": true,
-    "directory": "./templates/",
-    "available": [
-      "financial-analysis",
-      "climate-analysis",
-      "e-commerce-analytics"
-    ]
-  },
-  "capabilities": {
-    "single_agent_creation": true,
-    "multi_agent_suite": true,
-    "batch_creation": true,
-    "template_based": true,
-    "transcript_processing": true,
-    "interactive_mode": true,
-    "preview_system": true
-  },
-  "activation": {
-    "keywords": [
-      "create an agent for",
-      "create a skill for",
-      "create agent for",
-      "create skill for",
-      "automate workflow",
-      "automate this process",
-      "automate a repetitive workflow",
-      "every day I have to",
-      "daily I have to",
-      "I need to repeat",
-      "need to automate",
-      "turn process into agent",
-      "turn workflow into agent",
-      "turn this into agent",
-      "develop an agent for",
-      "develop a skill for",
-      "convert this transcript into agent",
-      "convert this codebase into SKILL"
-    ],
-    "patterns": [
-      "(?i)(create|build|develop|make)\\s+(an?\\s+)?(agent|skill)\\s+(for|to|that)",
-      "(?i)(automate|automation)\\s+(this\\s+)?(workflow|process|task|repetitive)",
-      "(?i)(every day|daily|repeatedly)\\s+(I|we)\\s+(have to|need to|do|must)",
-      "(?i)(turn|convert|transform)\\s+(this\\s+)?(process|workflow|task)\\s+into\\s+(an?\\s+)?agent",
-      "(?i)need\\s+to\\s+automate",
-      "(?i)(create|need)\\s+a\\s+custom\\s+skill",
-      "(?i)I\\s+(repeatedly|constantly|always)\\s+(need to|have to|do)"
-    ]
-  },
-  "usage": {
-    "example": "Create an agent for processing daily invoice PDFs and updating the database",
-    "input_types": [
-      "workflow_description",
-      "repetitive_task_description",
-      "automation_request"
-    ],
-    "output_types": [
-      "complete_skill",
-      "multi_agent_suite",
-      "functional_code"
-    ],
-    "when_to_use": [
-      "User explicitly asks to create an agent or skill",
-      "User describes a repetitive workflow that takes significant time",
-      "User wants to automate a manual process",
-      "User says phrases like 'every day I have to' or 'daily I need to'",
-      "User wants to turn a described process into an automated agent"
-    ],
-    "when_not_to_use": [
-      "User is asking general programming questions",
-      "User wants to use an existing skill (not create a new one)",
-      "User is asking for code snippets without automation context",
-      "User is asking about how skills work (documentation questions)",
-      "User wants to modify or debug existing code without creating new agent"
-    ]
-  },
-  "test_queries": [
-    "Create an agent for processing CSV files daily",
-    "Create a skill for analyzing stock market data",
-    "Automate this workflow: download PDFs, extract data, update spreadsheet",
-    "Every day I have to manually check emails and categorize them. Automate this.",
-    "I need to repeat this task: fetch API data, transform it, store in database",
-    "Turn this process into an agent: scrape websites, analyze content, generate reports",
-    "Develop an agent to monitor GitHub repos and send notifications",
-    "Need to automate invoice processing that I do daily",
-    "Create a skill that extracts data from PDFs and generates reports",
-    "Daily I have to download files from FTP and process them. Create an agent for this."
   ]
 }

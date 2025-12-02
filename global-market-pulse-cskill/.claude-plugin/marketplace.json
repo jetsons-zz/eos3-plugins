@@ -1,0 +1,31 @@
+{
+  "name": "global-market-pulse-cskill",
+  "version": "1.0.0",
+  "description": "Global market intelligence for executives and high-net-worth individuals",
+  "author": "Agent-Skill-Creator",
+  "owner": {
+    "name": "FrancyJGLisboa",
+    "email": "contact@example.com",
+    "url": "https://github.com/FrancyJGLisboa"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/FrancyJGLisboa/agent-skill-creator",
+  "keywords": [
+    "stock",
+    "market",
+    "finance",
+    "investment",
+    "indices",
+    "forex",
+    "commodities",
+    "executive"
+  ],
+  "plugins": [
+    {
+      "name": "global-market-pulse",
+      "description": "Global market pulse provides real-time stock indices, forex rates, commodities and cryptocurrency prices with executive-friendly analysis. Activates when user asks about stock market, market indices, S&P 500, Dow Jones, NASDAQ, market sentiment, forex rates, gold price, oil price, Bitcoin price, or investment market overview. Supports queries like 'how is the market today', 'global stock indices', 'USD CNY rate', 'gold price', 'market sentiment analysis'.",
+      "source": "./",
+      "skills": ["./"]
+    }
+  ]
+}

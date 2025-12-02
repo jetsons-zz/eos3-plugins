@@ -1,0 +1,20 @@
+{
+  "name": "daily-wealth-brief-cskill",
+  "version": "1.0.0",
+  "description": "AI-curated morning wealth briefing with market overview, portfolio updates, financial news, and economic calendar",
+  "author": "Agent-Skill-Creator",
+  "owner": {
+    "name": "FrancyJGLisboa",
+    "email": "contact@example.com",
+    "url": "https://github.com/FrancyJGLisboa"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/FrancyJGLisboa/agent-skill-creator",
+  "keywords": ["briefing", "wealth", "market", "portfolio", "news", "morning-brief", "finance"],
+  "plugins": [{
+    "name": "daily-wealth-brief",
+    "description": "Daily Wealth Brief provides personalized morning financial briefings including global market overview, portfolio performance, curated news, economic calendar, and earnings alerts. Activates when user asks for morning brief, market summary, portfolio update, or financial news. Supports queries like 'morning brief', 'market overview', 'what happened in markets', 'portfolio update'.",
+    "source": "./",
+    "skills": ["./"]
+  }]
+}

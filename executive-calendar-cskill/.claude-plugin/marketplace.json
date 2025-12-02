@@ -1,0 +1,20 @@
+{
+  "name": "executive-calendar-cskill",
+  "version": "1.0.0",
+  "description": "Executive calendar assistant for cross-timezone meeting scheduling, calendar optimization, and smart reminders",
+  "author": "Agent-Skill-Creator",
+  "owner": {
+    "name": "FrancyJGLisboa",
+    "email": "contact@example.com",
+    "url": "https://github.com/FrancyJGLisboa"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/FrancyJGLisboa/agent-skill-creator",
+  "keywords": ["calendar", "scheduling", "timezone", "meetings", "executive", "productivity"],
+  "plugins": [{
+    "name": "executive-calendar",
+    "description": "Executive Calendar provides intelligent meeting scheduling across timezones, calendar management, meeting fatigue analysis, and smart reminders. Activates when user asks about scheduling, meetings, calendar, time zones, agenda, or availability. Supports queries like 'schedule meeting with Tokyo', 'what time is it in London', 'my agenda today', 'find time for meeting'.",
+    "source": "./",
+    "skills": ["./"]
+  }]
+}

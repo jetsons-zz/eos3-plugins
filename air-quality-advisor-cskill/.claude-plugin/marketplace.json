@@ -1,0 +1,31 @@
+{
+  "name": "air-quality-advisor-cskill",
+  "version": "1.0.0",
+  "description": "Air quality monitoring and health advisory for global travelers and executives",
+  "author": "Agent-Skill-Creator",
+  "owner": {
+    "name": "FrancyJGLisboa",
+    "email": "contact@example.com",
+    "url": "https://github.com/FrancyJGLisboa"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/FrancyJGLisboa/agent-skill-creator",
+  "keywords": [
+    "air-quality",
+    "AQI",
+    "pollution",
+    "health",
+    "travel",
+    "PM2.5",
+    "environment",
+    "executive"
+  ],
+  "plugins": [
+    {
+      "name": "air-quality-advisor",
+      "description": "Air quality advisor provides real-time AQI data, health recommendations, and activity advice for cities worldwide. Activates when user asks about air quality, AQI, pollution level, PM2.5, outdoor exercise safety, smog, or travel air quality comparison. Supports queries like 'air quality in Beijing', 'is it safe to run outside', 'AQI comparison Shanghai vs Tokyo', 'should I wear a mask today'.",
+      "source": "./",
+      "skills": ["./"]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "weather-farming-advisor-cskill",
+  "version": "1.0.0",
+  "description": "Agricultural weather intelligence for smart farming decisions",
+  "author": "Agent-Skill-Creator",
+  "owner": {
+    "name": "FrancyJGLisboa",
+    "email": "contact@example.com",
+    "url": "https://github.com/FrancyJGLisboa"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/FrancyJGLisboa/agent-skill-creator",
+  "keywords": [
+    "agriculture",
+    "weather",
+    "farming",
+    "crop",
+    "soil",
+    "irrigation",
+    "forecast"
+  ],
+  "plugins": [
+    {
+      "name": "weather-farming-advisor",
+      "description": "Agricultural weather advisor that provides 7-day weather forecasts, soil condition analysis, crop suitability scoring, and farming operation recommendations. Activates when user asks about weather for farming, crop planting advice, agricultural weather forecast, soil temperature, irrigation timing, frost alerts, or farming recommendations for specific locations and crops. Supports queries like 'weather forecast for my farm', 'is it good to plant tomatoes', 'soil conditions for wheat', 'when should I irrigate', 'frost risk this week'.",
+      "source": "./",
+      "skills": ["./"]
+    }
+  ]
+}

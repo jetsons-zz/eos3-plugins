@@ -1,0 +1,20 @@
+{
+  "name": "deal-intelligence-cskill",
+  "version": "1.0.0",
+  "description": "Business due diligence assistant for executives - company profiles, funding analysis, hiring signals, news sentiment, and risk assessment",
+  "author": "Agent-Skill-Creator",
+  "owner": {
+    "name": "FrancyJGLisboa",
+    "email": "contact@example.com",
+    "url": "https://github.com/FrancyJGLisboa"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/FrancyJGLisboa/agent-skill-creator",
+  "keywords": ["due-diligence", "investment", "company-research", "risk-analysis", "business-intelligence", "M&A"],
+  "plugins": [{
+    "name": "deal-intelligence",
+    "description": "Deal Intelligence provides comprehensive business due diligence for executives including company profiles, financials, funding history, hiring activity analysis, news sentiment, and risk assessment. Activates when user asks about company research, due diligence, investment analysis, M&A targets, or business intelligence. Supports queries like 'research company X', 'due diligence on Y', 'is Z a good investment', 'company risk analysis'.",
+    "source": "./",
+    "skills": ["./"]
+  }]
+}

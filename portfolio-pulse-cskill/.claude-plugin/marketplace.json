@@ -1,0 +1,20 @@
+{
+  "name": "portfolio-pulse-cskill",
+  "version": "1.0.0",
+  "description": "Global portfolio dashboard for tracking stocks, crypto, commodities and forex",
+  "author": "Agent-Skill-Creator",
+  "owner": {
+    "name": "FrancyJGLisboa",
+    "email": "contact@example.com",
+    "url": "https://github.com/FrancyJGLisboa"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/FrancyJGLisboa/agent-skill-creator",
+  "keywords": ["portfolio", "investment", "stocks", "crypto", "wealth", "finance"],
+  "plugins": [{
+    "name": "portfolio-pulse",
+    "description": "Portfolio pulse provides comprehensive investment portfolio analysis including stock tracking, crypto prices, commodities, risk analysis and rebalancing suggestions. Activates when user asks about portfolio, investments, holdings, asset allocation, stock performance, or wealth summary. Supports queries like 'how is my portfolio', 'investment performance', 'asset allocation analysis'.",
+    "source": "./",
+    "skills": ["./"]
+  }]
+}

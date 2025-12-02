@@ -1,0 +1,34 @@
+{
+  "name": "ai-quant-trader-cskill",
+  "version": "1.0.0",
+  "description": "AI-powered quantitative trading system with technical analysis, sentiment analysis, factor models, risk management, and strategy backtesting",
+  "author": "Agent-Skill-Creator",
+  "owner": {
+    "name": "FrancyJGLisboa",
+    "email": "contact@example.com",
+    "url": "https://github.com/FrancyJGLisboa"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/FrancyJGLisboa/agent-skill-creator",
+  "keywords": [
+    "quantitative-trading",
+    "stock-analysis",
+    "technical-analysis",
+    "sentiment-analysis",
+    "alpha-generation",
+    "risk-management",
+    "backtesting",
+    "factor-model",
+    "AI-trading",
+    "market-intelligence",
+    "portfolio-optimization"
+  ],
+  "plugins": [
+    {
+      "name": "ai-quant-trader",
+      "description": "AI Quant Trader Pro provides comprehensive stock analysis including technical indicators (MA, RSI, MACD, Bollinger Bands), pattern recognition, sentiment analysis, multi-factor scoring, risk management, and strategy backtesting. Activates when user asks about stock analysis, trading signals, buy/sell recommendations, market sentiment, portfolio risk, position sizing, stop loss, backtesting, or quantitative strategies. Supports queries like 'analyze AAPL', 'should I buy TSLA', 'market sentiment', 'backtest moving average strategy', 'calculate position size', 'set stop loss'.",
+      "source": "./",
+      "skills": ["./"]
+    }
+  ]
+}

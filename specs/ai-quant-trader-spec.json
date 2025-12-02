@@ -1,0 +1,271 @@
+{
+  "name": "ai-quant-trader",
+  "display_name": "AI Quant Trader Pro",
+  "description": "大模型驱动的智能量化交易系统，集成技术分析、情绪分析、因子模型、风险管理、策略回测等功能。对标顶级量化竞赛水准，为投资者提供专业级AI交易决策支持。",
+  "domain": "Finance/Trading",
+  "version": "1.0.0",
+  "keywords": [
+    "quantitative-trading",
+    "stock-analysis",
+    "technical-analysis",
+    "sentiment-analysis",
+    "alpha-generation",
+    "risk-management",
+    "backtesting",
+    "factor-model",
+    "AI-trading",
+    "market-intelligence"
+  ],
+  "modules": [
+    {
+      "name": "market_analyzer",
+      "description": "市场分析引擎 - 技术指标、形态识别、趋势分析",
+      "functions": [
+        {
+          "name": "analyze_stock",
+          "description": "综合分析单只股票，返回技术面、基本面、情绪面综合评分",
+          "params": [
+            {"name": "symbol", "type": "str", "description": "股票代码"},
+            {"name": "market", "type": "str", "description": "市场(US/CN/HK)", "default": "US"}
+          ],
+          "return_type": "Dict"
+        },
+        {
+          "name": "calculate_technical_indicators",
+          "description": "计算技术指标：MA/EMA/MACD/RSI/KDJ/布林带等",
+          "params": [
+            {"name": "symbol", "type": "str", "description": "股票代码"},
+            {"name": "indicators", "type": "List[str]", "description": "指标列表", "default": "['MA', 'RSI', 'MACD']"}
+          ],
+          "return_type": "Dict"
+        },
+        {
+          "name": "detect_patterns",
+          "description": "识别K线形态：头肩顶/底、双顶/底、三角形等",
+          "params": [
+            {"name": "symbol", "type": "str", "description": "股票代码"},
+            {"name": "period", "type": "str", "description": "周期", "default": "1mo"}
+          ],
+          "return_type": "Dict"
+        },
+        {
+          "name": "analyze_trend",
+          "description": "趋势分析：识别上升/下降/盘整趋势及强度",
+          "params": [
+            {"name": "symbol", "type": "str", "description": "股票代码"}
+          ],
+          "return_type": "Dict"
+        }
+      ]
+    },
+    {
+      "name": "sentiment_analyzer",
+      "description": "情绪分析引擎 - 新闻情绪、社交媒体情绪、市场情绪指标",
+      "functions": [
+        {
+          "name": "analyze_news_sentiment",
+          "description": "分析股票相关新闻情绪",
+          "params": [
+            {"name": "symbol", "type": "str", "description": "股票代码"},
+            {"name": "days", "type": "int", "description": "天数", "default": "7"}
+          ],
+          "return_type": "Dict"
+        },
+        {
+          "name": "get_market_sentiment",
+          "description": "获取整体市场情绪指标：恐慌贪婪指数、VIX等",
+          "params": [
+            {"name": "market", "type": "str", "description": "市场", "default": "US"}
+          ],
+          "return_type": "Dict"
+        },
+        {
+          "name": "analyze_insider_activity",
+          "description": "分析内部人交易活动",
+          "params": [
+            {"name": "symbol", "type": "str", "description": "股票代码"}
+          ],
+          "return_type": "Dict"
+        },
+        {
+          "name": "get_analyst_ratings",
+          "description": "获取分析师评级汇总",
+          "params": [
+            {"name": "symbol", "type": "str", "description": "股票代码"}
+          ],
+          "return_type": "Dict"
+        }
+      ]
+    },
+    {
+      "name": "alpha_generator",
+      "description": "Alpha信号生成器 - 多因子模型、选股信号",
+      "functions": [
+        {
+          "name": "generate_alpha_signals",
+          "description": "生成Alpha交易信号",
+          "params": [
+            {"name": "symbols", "type": "List[str]", "description": "股票代码列表"},
+            {"name": "strategy", "type": "str", "description": "策略类型", "default": "momentum"}
+          ],
+          "return_type": "Dict"
+        },
+        {
+          "name": "run_factor_model",
+          "description": "运行多因子模型评分",
+          "params": [
+            {"name": "symbols", "type": "List[str]", "description": "股票代码列表"},
+            {"name": "factors", "type": "List[str]", "description": "因子列表", "default": "['value', 'momentum', 'quality']"}
+          ],
+          "return_type": "Dict"
+        },
+        {
+          "name": "screen_stocks",
+          "description": "智能选股筛选器",
+          "params": [
+            {"name": "criteria", "type": "Dict", "description": "筛选条件"},
+            {"name": "market", "type": "str", "description": "市场", "default": "US"},
+            {"name": "limit", "type": "int", "description": "返回数量", "default": "20"}
+          ],
+          "return_type": "Dict"
+        },
+        {
+          "name": "find_similar_stocks",
+          "description": "寻找相似股票（基于因子特征）",
+          "params": [
+            {"name": "symbol", "type": "str", "description": "参考股票"},
+            {"name": "limit", "type": "int", "description": "返回数量", "default": "10"}
+          ],
+          "return_type": "Dict"
+        }
+      ]
+    },
+    {
+      "name": "risk_manager",
+      "description": "风险管理模块 - 仓位管理、止损止盈、组合风险",
+      "functions": [
+        {
+          "name": "calculate_position_size",
+          "description": "凯利公式/固定比例计算最优仓位",
+          "params": [
+            {"name": "capital", "type": "float", "description": "总资金"},
+            {"name": "risk_per_trade", "type": "float", "description": "单笔风险比例", "default": "0.02"},
+            {"name": "entry_price", "type": "float", "description": "入场价"},
+            {"name": "stop_loss", "type": "float", "description": "止损价"}
+          ],
+          "return_type": "Dict"
+        },
+        {
+          "name": "calculate_var",
+          "description": "计算投资组合VaR风险值",
+          "params": [
+            {"name": "holdings", "type": "List[Dict]", "description": "持仓列表"},
+            {"name": "confidence", "type": "float", "description": "置信度", "default": "0.95"}
+          ],
+          "return_type": "Dict"
+        },
+        {
+          "name": "set_stop_loss",
+          "description": "智能止损建议：ATR止损、百分比止损、技术位止损",
+          "params": [
+            {"name": "symbol", "type": "str", "description": "股票代码"},
+            {"name": "entry_price", "type": "float", "description": "入场价"},
+            {"name": "method", "type": "str", "description": "止损方法", "default": "atr"}
+          ],
+          "return_type": "Dict"
+        },
+        {
+          "name": "analyze_portfolio_risk",
+          "description": "分析投资组合风险：相关性、集中度、Beta等",
+          "params": [
+            {"name": "holdings", "type": "List[Dict]", "description": "持仓列表"}
+          ],
+          "return_type": "Dict"
+        }
+      ]
+    },
+    {
+      "name": "backtester",
+      "description": "策略回测引擎 - 历史回测、绩效分析",
+      "functions": [
+        {
+          "name": "backtest_strategy",
+          "description": "回测交易策略",
+          "params": [
+            {"name": "strategy", "type": "str", "description": "策略名称/代码"},
+            {"name": "symbols", "type": "List[str]", "description": "标的列表"},
+            {"name": "start_date", "type": "str", "description": "开始日期"},
+            {"name": "end_date", "type": "str", "description": "结束日期"},
+            {"name": "initial_capital", "type": "float", "description": "初始资金", "default": "100000"}
+          ],
+          "return_type": "Dict"
+        },
+        {
+          "name": "analyze_performance",
+          "description": "分析策略绩效：夏普比率、最大回撤、胜率等",
+          "params": [
+            {"name": "trades", "type": "List[Dict]", "description": "交易记录"}
+          ],
+          "return_type": "Dict"
+        },
+        {
+          "name": "compare_strategies",
+          "description": "比较多个策略绩效",
+          "params": [
+            {"name": "strategies", "type": "List[str]", "description": "策略列表"},
+            {"name": "benchmark", "type": "str", "description": "基准", "default": "SPY"}
+          ],
+          "return_type": "Dict"
+        },
+        {
+          "name": "optimize_parameters",
+          "description": "参数优化：网格搜索最优参数",
+          "params": [
+            {"name": "strategy", "type": "str", "description": "策略"},
+            {"name": "param_grid", "type": "Dict", "description": "参数网格"}
+          ],
+          "return_type": "Dict"
+        }
+      ]
+    },
+    {
+      "name": "report_generator",
+      "description": "报告生成器 - 交易报告、研报生成",
+      "functions": [
+        {
+          "name": "generate_trading_report",
+          "description": "生成综合交易报告",
+          "params": [
+            {"name": "symbol", "type": "str", "description": "股票代码"}
+          ],
+          "return_type": "str"
+        },
+        {
+          "name": "generate_watchlist_report",
+          "description": "生成自选股监控报告",
+          "params": [
+            {"name": "symbols", "type": "List[str]", "description": "自选股列表"}
+          ],
+          "return_type": "str"
+        },
+        {
+          "name": "generate_portfolio_report",
+          "description": "生成投资组合报告",
+          "params": [
+            {"name": "holdings", "type": "List[Dict]", "description": "持仓列表"}
+          ],
+          "return_type": "str"
+        },
+        {
+          "name": "get_ai_recommendation",
+          "description": "获取AI综合投资建议",
+          "params": [
+            {"name": "symbol", "type": "str", "description": "股票代码"},
+            {"name": "investment_style", "type": "str", "description": "投资风格", "default": "balanced"}
+          ],
+          "return_type": "Dict"
+        }
+      ]
+    }
+  ]
+}

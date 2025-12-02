@@ -1,9 +1,15 @@
 {
   "name": "article-to-prototype-cskill",
   "version": "1.0.0",
-  "type": "skill",
   "description": "Autonomously extracts technical content from articles (PDF, web, markdown, notebooks) and generates functional prototypes/POCs in the appropriate programming language",
   "author": "Agent-Skill-Creator",
+  "owner": {
+    "name": "FrancyJGLisboa",
+    "email": "contact@example.com",
+    "url": "https://github.com/FrancyJGLisboa"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/FrancyJGLisboa/agent-skill-creator",
   "keywords": [
     "article",
     "paper",
@@ -109,5 +115,13 @@
     "architecture": "simple-skill",
     "agentdb_enabled": true,
     "learning_enabled": true
-  }
+  },
+  "plugins": [
+    {
+      "name": "article-to-prototype",
+      "description": "Extracts technical content from articles (PDF, web, markdown, notebooks) and generates functional prototypes in the appropriate programming language. Activates when user wants to implement code from papers, tutorials, documentation, or technical articles. Supports queries like 'implement this paper', 'extract algorithm from PDF', 'build prototype from article', 'parse this notebook and create code'.",
+      "source": "./",
+      "skills": ["./"]
+    }
+  ]
 }

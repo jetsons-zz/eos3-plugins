@@ -1,0 +1,20 @@
+{
+  "name": "decision-matrix-cskill",
+  "version": "1.0.0",
+  "description": "Structured decision analysis framework for executives - weighted scoring, sensitivity analysis, risk assessment, and recommendation generation",
+  "author": "Agent-Skill-Creator",
+  "owner": {
+    "name": "FrancyJGLisboa",
+    "email": "contact@example.com",
+    "url": "https://github.com/FrancyJGLisboa"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/FrancyJGLisboa/agent-skill-creator",
+  "keywords": ["decision-making", "analysis", "matrix", "scoring", "executive", "strategy"],
+  "plugins": [{
+    "name": "decision-matrix",
+    "description": "Decision Matrix provides a structured framework for major decisions including weighted criteria scoring, sensitivity analysis, pros-cons analysis, risk assessment, and recommendation generation. Activates when user needs help with decisions, comparing options, evaluating alternatives, or analyzing trade-offs. Supports queries like 'help me decide', 'compare options', 'evaluate alternatives', 'analyze decision'.",
+    "source": "./",
+    "skills": ["./"]
+  }]
+}
