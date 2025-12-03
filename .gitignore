@@ -40,3 +40,6 @@ agentdb.db
 test_*.py
 !test_agentdb_learning.py
 tests/
+
+# Skill-specific config files
+llm-council-cskill/assets/config.json

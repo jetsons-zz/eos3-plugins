@@ -1,0 +1,21 @@
+{
+  "name": "llm-council-cskill",
+  "owner": {
+    "name": "LLM Council",
+    "email": "noreply@llm-council.dev"
+  },
+  "metadata": {
+    "description": "Multi-model deliberation system for collaborative decision-making through 3-stage consensus building",
+    "version": "1.0.0",
+    "created": "2025-11-28"
+  },
+  "plugins": [
+    {
+      "name": "llm-council-deliberation",
+      "description": "Multi-model deliberation system enabling collaborative AI decision-making through 3-stage consensus: individual responses, anonymous peer ranking, and chairman synthesis. Perfect for architecture decisions, code reviews, technical assessments, and complex problem-solving requiring diverse AI perspectives with bias-free evaluation.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./"]
+    }
+  ]
+}
