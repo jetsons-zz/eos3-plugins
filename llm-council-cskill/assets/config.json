@@ -1,0 +1,13 @@
+{
+  "council_models": [
+    "DeepSeek-V3",
+    "Qwen3-235B-A22B",
+    "kim2-thinking",
+    "Kimi-K2-Instruct"
+  ],
+  "chairman_model": "openrouter/google/gemini-3-pro-preview",
+  "timeout_seconds": 120,
+  "max_retries": 2,
+  "cache_enabled": true,
+  "cache_ttl_hours": 24
+}
